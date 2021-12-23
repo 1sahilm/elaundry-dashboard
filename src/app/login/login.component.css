@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+body {
+      /* background-image: url('../img/mask-group-3.png'); */
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;
+}
+/* Add styles to the form container */
+/* Full-width input fields */
+.login-box {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 25px #000000A6;
+    border-radius: 20px;
+    display: block;
+    text-align: left;
+    padding: 34px;
+    color: #fff;
+    /*! width: 350px; */
+    /*! height: 500px; */
+}
+
+
+.login-box .text-h5 h5 {
+    text-align: left !important;
+    color: #000000;
+    font-size: 25px;
+    margin-bottom: 44px;
+
+}
+
+.login-box h1 {
+    text-align: center;
+    font: normal normal bold 48px/60px Proxima Nova;
+    letter-spacing: 0px;
+}
+
+.login-box h5 span {
+    color: #00B1ED;
+}
+
+
+
+.logo-box img {
+    height: 90px;
+    margin-bottom: 56px;
+}
+
+.login-box h5 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login-box form label {display: block;}
+
+.login-box form  input {
+    width: 100%;
+    border: 2px solid #EEEEEE;
+    border-radius: 10px;
+    height: 50px;
+    padding: 0 10px;
+}
+
+.login-box .logo-box {
+    display: block;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.login-box form button.btn {
+    padding: 10px 50px;
+    margin: 30px auto 0 auto;
+    display: block;
+    background-color: #00B1ED;
+    border-radius: 50px;
+   
+width: 250px;
+color: #fff;
+font-weight: 600;
+}
+
+.login-box form label {
+    display: block;
+    color: #A5A5A5;
+    margin: 0;
+}
+
+.login-box {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 25px #000000a6;
+    border-radius: 11px;
+    display: block;
+    text-align: left;
+    padding: 37px 34px 39px 34px;
+
+}
+ 
+ .col-lg-12{
+    background-color: #ffffff;
+    top: 958px;
+left: 175px;
+width: 1330px;
+height: 65px;
+text-align: left;
+font: normal normal normal 25px/35px Proxima Nova;
+letter-spacing: 0.63px;
+opacity: 1;
+ }
+
+/* Radial In */
+.hvr-radial-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  background: #2098D1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+ 
+.hvr-radial-in:hover, .hvr-radial-in:focus, .hvr-radial-in:active {
+  color: white;
+}
+.hvr-radial-in:hover:before, .hvr-radial-in:focus:before, .hvr-radial-in:active:before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+
+
+
+
+a{
+text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1, h2{
+color: #444;
+}
+.side-menu{
+    position: fixed;
+    background: #ffffff;
+    min-height: 100vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+.side-menu .brand-name{
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.side-menu li{
+    font-size:24px ;
+    padding:10px 40px ;
+    color:#000 ;
+    display:flex ;
+    align-items: center;
+}
+.side-menu li:hover{
+    background: whitesmoke;
+    color: #002b6b;
+}
+.navbar-nav{
+   position: fixed;
+   display: flex;
+   
+
+}

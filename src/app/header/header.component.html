@@ -1,0 +1,111 @@
+
+<mat-toolbar class="for-mobile">
+    <mat-toolbar-row class="justify-content-between on-mobile">
+      <!-- Mobile Header start -->
+      <div class="only-mobile-show col-12">
+
+
+
+
+
+      
+     <div class="col-12">
+      <div class="row" style="margin-top: 60px; margin-bottom: 40px;">
+        <div class="col-2 xs-2">
+          <img src="../../assets/icons/left-arrow.png" width="30" height="30" alt="company-logo" style="margin-top: 30px;">
+        </div>
+        <div class="col-6 menu-logo" style="text-align: center;">
+       
+          <img src="../../assets/logo/logo-1-1.png" width="150" height="70" alt="company-logo"><p style="color: #002B6B;">Store : E-laundry-63</p>
+        </div>
+        <div class="col-4 xs-2 menu-nav-icon">
+          <div >
+          <button class="btn btn-primary " type="text" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></button>
+        </div>
+ </div>
+      </div>
+     </div>
+
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <!-- <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><img style="text-align: right; float: right;" src="/assets/images/Group 407.png" width="20" height="20" alt=""></button>
+        </div> -->
+        <div class="offcanvas-body">
+          <!-- <span style="color: #000;">Home</span> -->
+          <div class="row">
+            <div class="col-3 user-icon-avtar">
+              <img src="/assets/images/png-transparent-orange-and-white-logo-computer-icons-icon-design-person-person-miscellaneous-logo-silhouette.png" width="50" height="50" alt="">
+            </div>
+            <div class="col-7">
+              <p class="user-name">
+                <b style="color: #000;">Girish Lathaar</b>  <span style="font-size: 11px; font-weight: 400; color: #707070;">10-09-2021 02:52:40 PM</span>  
+              </p>
+            </div>
+            <div class="col-2" >
+              <div style="float: right;">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><img style="text-align: right; float: right;" src="/assets/icons/times-solid.svg" width="20" height="20" alt=""></button>
+            </div>
+            </div>
+            <div class="icons-dashboard rightsidemenu " style="margin-top: 0px !important;">
+
+    <div class="first-child-mobile-hover active">
+              <a mat-list-item routerLink="/home" routerLinkActive="list-item-active " class="mobile-link-one " >
+                  <img src="/assets/icons/Icon awesome-tachometer-alt.svg" width="20" height="20" alt="" class="mobile-icons-one"> <span class="text-side">Dashboard</span> </a> </div> <br>
+                  <div class="first-child-mobile-hover">
+                  <a mat-list-item routerLink="/dashboard" routerLinkActive="list-item-active" >
+                      <img src="/assets/icons/Group 15.svg" width="20" height="20" alt=""> <span class="text-side">Orders</span></a></div> <br>
+                      <div class="first-child-mobile-hover">
+                      <a mat-list-item routerLink="/store" routerLinkActive="list-item-active"><img src="/assets/icons/Group 11.svg" width="20" height="20" alt=""> <span class="text-side">Store-Warehouse</span></a></div><br>
+                      <div class="first-child-mobile-hover">
+                      <a mat-list-item routerLink="/riderjob" routerLinkActive="list-item-active" ><img src="/assets/icons/Group 14.svg" width="20" height="20" alt=""> <span class="text-side">Rider Jobs</span></a></div><br>
+                      <div class="first-child-mobile-hover">
+                      <a mat-list-item routerLink="/storeex" routerLinkActive="list-item-active" ><img src="/assets/icons/Group 13.svg" width="20" height="20" alt=""> <span class="text-side">Store-Expense</span></a></div><br>
+                      <div class="first-child-mobile-hover">
+                      <a mat-list-item routerLink="/reports" routerLinkActive="list-item-active"  > <img src="/assets/icons/Group 12.svg" width="20" height="20" alt=""> <span class="text-side">Reports</span>  </a></div><br>
+                      
+                      <div class="first-child-mobile-hover"> 
+                      <a mat-list-item routerLink="/setting" routerLinkActive="list-item-active" ><img src="/assets/icons/Icon feather-settings.svg" width="20" height="20" alt=""> <span class="text-side">NewSetting</span> </a></div>
+                      <div class="first-child-mobile-hover">
+                      <a mat-list-item routerLink="/login" routerLinkActive="list-item-active" ><img src="/assets/icons/Icon feather-settings.svg" width="20" height="20" alt=""> <span class="text-side">Login</span> </a></div>
+                      <div class="log-btn text-center">
+                        <a href="#">Logout</a>
+                      </div>
+                      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Mobile Header end -->
+        <h4 class="heading">Store : E-laundry-63</h4>
+      <!-- <button mat-icon-button (click)="toggleSidebar()">
+        <mat-icon>menu</mat-icon>
+      </button> -->
+      <div class="row mr-2 ml-auto">
+        <ul class="row m-0 align-items-center">
+          <li>
+            <button
+              mat-button
+              [matMenuTriggerFor]="menu"
+              class="user mt-2 d-flex align-items-center"
+            >
+              
+  
+              <h4 class="admin-section">Girish Lathaar </h4>
+              <mat-icon class="user-image-icon ml-1"
+                >keyboard_arrow_down</mat-icon
+              >
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+                <mat-icon>exit_to_app</mat-icon>
+                Logout
+              </button>
+            </mat-menu>
+          </li>
+        </ul>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  

@@ -1,1 +1,677 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.pr-2 {
+    padding-right: 2em;
+}
+.pl-2 {
+    padding-left: 2em;
+}
+.mt-1-5{
+    margin-top: 1.5em !important;
+}
+.mb-1-5{
+    margin-bottom: 1.5em !important;
+}
+.table-responsive-style {
+	height: 300px;
+	overflow:auto !important;
+	overflow-x:auto !important;
+	display:block;
+	width:100%;
+	position: relative;
+	}
+    .table-responsive-style thead.tabel-heading {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+      }
+.form-box-style label {
+    font-size: 18px;
+    color: #002B6B;
+    font-weight: 500;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+ 
+/* class applies to select element itself, not a wrapper element */
+.form-group select.form-control {
+  
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /* appearance: none; */
+  background-color: #fff;
+  /* note: bg image below uses 2 urls. The first is an svg data uri for the arrow icon, and the second is the gradient. 
+    for the icon, if you want to change the color, be sure to use `%23` instead of `#`, since it's a url. You can also swap in a different svg icon or an external image reference
+    
+  */
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E),
+    linear-gradient(to bottom, #ffffff 0%,#ffffff 100%);
+  background-repeat: no-repeat, repeat;
+  /* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
+  background-position: right .7em top 50%, 0 0;
+  /* icon size, then gradient */
+  background-size: .65em auto, 100%;
+}
+/* Hide arrow icon in IE browsers */
+.form-group select.form-control::-ms-expand {
+  display: none;
+}
+/* Hover style */
+.form-group select.form-control:hover {
+  border-color: #888;
+}
+/* Focus style */
+.form-group select.form-control:focus {
+  border-color: #aaa;
+  /* It'd be nice to use -webkit-focus-ring-color here but it doesn't work on box-shadow */
+  box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222; 
+  outline: none;
+}
+
+/* Set options to normal weight */
+.form-group select.form-control option {
+  font-weight:normal;
+}
+
+/* Support for rtl text, explicit support for Arabic and Hebrew */
+*[dir="rtl"] .form-group select.form-control, :root:lang(ar) .form-group select.form-control, :root:lang(iw) .form-group select.form-control {
+  background-position: left .7em top 50%, 0 0;
+  padding: .6em .8em .5em 1.4em;
+}
+
+/* Disabled styles */
+.form-group select.form-control:disabled, .form-group select.form-control[aria-disabled=true] {
+  color: graytext;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22graytext%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+    linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+}
+
+.form-group select.form-control:disabled:hover, .form-group select.form-control[aria-disabled=true] {
+  border-color: #aaa;
+}
+.table-responsive-style-2.print-table .form-control {
+    border: 1px solid #000;
+    border-radius: 0px;
+    background: #fff;
+    padding: 0 10px;
+    height: 32px;
+    margin: 6px 0px 6px auto;
+    width: 99%;
+}
+
+.table-responsive-style-2.print-table hr {
+    margin: 0px 0px;
+    padding: 0;
+}
+
+.table-responsive-style-2.print-table tfoot {
+    position: sticky;
+    bottom: 0;
+}
+.table-responsive-style-2.print-table  .form-check-input {
+    width: 35px !important;
+    height: 35px !important;
+    border: 1px solid #000 !important;
+    border-radius: 0px !important;
+    margin: 5px auto;
+}
+
+.table-responsive-style-2.print-table .form-checker {
+    text-align: center;
+    padding: 0;
+    display: block;
+}
+
+.table-responsive-style-2.print-table .form-checker .form-check {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table-responsive-style-2 {
+	max-height: 350px;
+	overflow:overlay;  display:block;
+	width:100%;
+	position: relative;
+	}
+
+    .table-responsive-style-2 thead.tabel-heading {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+      }
+
+
+
+      
+@media (min-width: 768px){
+  .mat-drawer-container {
+         
+        overflow: scroll;
+        height: 100%;
+    }
+
+    .form-box-style {
+        margin-bottom: 20px;
+    }
+    
+    .form-box-style .row {
+        display: flex;
+        align-items: end;
+    }
+    
+    .form-box-style .form-group {
+        margin: 0 !important;
+    }
+    
+    .form-box-style [class*="col-"] {
+        margin-top: 15px;
+    }
+    .form-box-style [class*="col-"] button {margin-bottom: 0 !important;}
+ }
+@media (max-width: 768px){
+
+
+    
+        .col-tab-1 {
+            flex: 0 0 auto;
+            width: 100% !important;
+        }
+    
+        .col-tab-5 {
+            flex: 0 0 auto;
+            width: 50% !important;
+        }
+
+        .col-tab-15 {
+            flex: 0 0 auto;
+            width: 15% !important;
+        }
+        .col-tab-35 {
+            flex: 0 0 auto;
+            width: 35% !important;
+        }
+    
+
+
+    .mat-drawer-opened {
+        display: none !important;
+    }
+    .top-nav{
+        display: none;
+    }
+    .mat-toolbar-row .heading{
+        display: none;
+    }
+    .mat-toolbar-row .admin-section{
+        display: none;
+    }
+    .mat-toolbar-row .user-image-icon{
+        display: none;
+    }
+    .mat-toolbar-row .mobile-header{
+        display: block !important;
+    }
+    
+    #button-addon1{
+        background: #ffffff !important ;
+        padding: 16px !important;
+    }
+    mat-toolbar-row.mat-toolbar-row.justify-content-between{
+        background-color: #fff !important;
+        height: 112px !important;
+    }
+    .menu-nav-icon{
+        position: relative;
+        text-align: right;
+        left: 44px; 
+        display: flex;
+    align-items: center;
+    justify-content: end;
+        
+    }
+    .menu-nav-icon button{
+        background-image: url(/assets/icons/bars-solid.svg) !important;
+        background-repeat: no-repeat !important;
+        background-size: 20px !important;
+        color: #000 !important;
+        height: 48px !important;
+        width: 48px;
+        background-position: center center !important;
+    }
+
+    .menu-nav-icon button:active {
+        border: 2px solid #000;
+    }
+    
+    .menu-nav-icon button:active ,
+    .menu-nav-icon button:focus {
+        background-image: url(/assets/icons/bars-solid.svg) !important;
+        background-repeat: no-repeat !important;
+        background-size: 20px !important;
+        background-position: center center !important;
+        opacity: 1;
+        outline: 0px !important;
+        box-shadow: none !important;
+    }
+    .menu-logo{
+        position: relative;
+        left: 60px;
+    }
+    .btn-check:focus+.btn-primary, .btn-primary:focus{
+        background: transparent !important;
+    }
+    .offcanvas-body{
+        padding: 1rem 12px !important;
+        margin-right: -15px;
+    }
+    .for-mobile .on-mobile .xs-2 {
+        width: 20%;
+        margin: 0;
+        padding: 0;
+        left: 0;
+    }
+    
+    .for-mobile .on-mobile .only-mobile-show .menu-logo {
+        width: 60% !important;
+        left: 0;
+    }
+    
+
+}
+
+.only-mobile-show{
+    display: none;
+}
+.row.tab-section-style {
+    overflow: scroll;
+    max-height: 40vh;
+    overflow-x: hidden;
+}
+
+
+/* width */
+.row.tab-section-style::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.row.tab-section-style::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.row.tab-section-style::-webkit-scrollbar-thumb {
+  background: #555 ; 
+}
+
+/* Handle on hover */
+.row.tab-section-style::-webkit-scrollbar-thumb:hover {
+  background:#dc3545; 
+}
+@media (max-width: 1024px){
+    .nav-tabs-pd #pills-tab {
+        grid-column-gap: 19px;
+        column-gap: 19px;
+        display: flex;
+        flex-wrap: inherit;
+        overflow: scroll;
+    }
+    .nav-tabs-pd #pills-tab .nav-link {
+       
+        line-height: 20px !important;
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px){
+
+    mat-toolbar.mat-toolbar.for-mobile.mat-toolbar-multiple-rows {
+        overflow: hidden;
+    }
+    .mobile-btn-qo-1 button {
+    padding: 10px 21px !important;
+    font-size: 12px !important;
+    width: 100%;
+    margin-bottom: 4px;
+}
+.only-mobile-show{
+    display: block;
+    width: 100%;
+}
+
+.cut-inv-style p.text-center {
+    position: relative;
+    top: -3px;
+    left: -104px;
+    letter-spacing: 0 !important;
+    word-spacing: 0 !important;
+    font-size: 12px !important;
+    color: #959090bf;
+}
+.form-control{
+    padding: 15px 15px 15px 15px !important;
+}
+
+.col-12.col-md-7.cut-inv-style{
+    margin-top: -16px;
+}
+.style-25 {padding: 0 0px !important;}
+
+.style-25>.col-md-12 {
+    margin: 0 -15px;
+}
+
+.style-25>.col-md-12 ul {
+    display: flex;
+    background: #002B6B;
+    margin: 0 -3px;
+}
+
+.style-25>.col-md-12 ul li {
+    width: calc(100%/4 - 0px);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: #EE4136 !important;
+    border-bottom: 3px solid #EE4136 !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover{
+    color: #EE4136 !important;
+    border-bottom: 3px solid #EE4136 !important;
+}
+
+.style-25>.col-md-12 ul li button {
+    width: 89%;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0px !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 56px;
+    background: #002B6B !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+    font-size: 13px !important;
+    letter-spacing: 1px;
+    
+}
+.booking-dating button{
+    color: #002B6B !important;
+    background: #E1F6FF;
+    font-size: 36px !important;
+    padding: 14px 33px 14px 33px;
+    letter-spacing: 0.7px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #002b6b26;
+}
+.booking-text{
+    color: #707070 !important;
+    font-size: 30px;
+}
+
+.style-25 .tab-content .booking-dating {
+    width: 80% !important;
+    margin: 10px auto !important;
+}
+
+.style-25 .tab-content .booking-dating button.btn {
+    width: 100%;
+}
+.offcanvas-backdrop::before{
+    background: none;
+    content: none;
+}
+.rightsidemenu span{
+    padding: 7px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #002B6B;
+    /* background: #7c7c7c; */
+    
+}
+a{
+    text-decoration: none;
+}
+.rightsidemenu img{
+    width: 70px;
+    height: 27px;
+}
+.rightsidemenu{
+    padding: 0;
+    margin: 0 !important; 
+    --bs-gutter-x: 2rem !important;
+}
+
+/* .first-child-mobile{
+    padding: 30px 0px 30px 0px;
+    background-color: #d5d5d536;
+    border-left: 8px solid #00B1ED;
+} */
+
+p.user-name {
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+p.user-name b {
+    display: block;
+    width: 100%;
+}
+
+p.user-name span {
+    display: block;
+    width: 100%;
+}
+.only-mobile-show div#offcanvasRight:before {content: "";position: absolute;width: 1000px;height: 1620px;background: #000;left: 0;top: 0;transform: translate(-55% , -12%);opacity: 0.5;z-index: -9;}
+
+.offcanvas-body {z-index: 999;position: relative;background: #ffff;}
+
+.user-icon-avtar img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center center;
+}
+ 
+.first-child-mobile:active{
+    padding: 15px 0px 15px 0px;
+    background-color: #d5d5d536;
+    border-left: 8px solid #00B1ED;
+}
+.first-child-mobile-hover{
+    padding: 15px 0px 15px 0px;
+    border-left: 8px solid #00b2ed00;
+     
+}
+.first-child-mobile-hover:hover{ 
+    background-color: #d5d5d536;
+    border-left: 8px solid #00B1ED;
+}
+.first-child-mobile-hover + br {
+    display: none;
+}
+#offcanvasRight{
+    margin-top: 35px;
+}
+.log-btn a{
+    font-size: 27px !important;
+    text-align: center !important;
+    position: relative;
+    top: 20px !important;
+    color: #002B6B;
+}
+
+.logo-box{
+    display: none;
+}
+.login-box{
+    background: #E8FBFE 0% 0% no-repeat padding-box !important;
+    box-shadow: -1px -1px 6px #00000040 !important;
+    border-radius: 51px !important;
+    display: block;
+    text-align: left;
+    padding: 37px 34px 39px 34px;
+    width: 80%;
+    margin: 0 auto !important;
+    margin-bottom: 82px !important;
+}
+.login-box .text-h5 h5{
+    font-size: 26px !important
+}
+.login-box form label{
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin-top: 46px !important;
+    margin-bottom: 10px !important;
+}
+.login-box form button.btn{
+    
+    padding: 18px 86px !important;
+    border-radius: 32px !important;
+    width: 310px !important;
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px !important;
+}
+.login-box form input{
+    border: 4px solid #EEEEEE !important;
+    border-radius: 10px !important;
+    height: 50px;
+    padding: 35px 10px !important;
+}
+.login-footer-text {
+    margin-top: 33px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.login-box form button.btn {
+    padding: 6px 16px !important; 
+    width: 100% !important;
+    
+}
+div.login-out-box 
+{ width: 90%;}
+
+.nav-tabs-pd {padding: 0 !important;display: flex;}
+
+.nav-tabs-pd ul#pills-tab {
+    display: flex !important;
+    grid-column-gap: 0;
+    column-gap: 0;
+    overflow: scroll;
+    justify-content: space-between;
+    flex-wrap: inherit;
+}
+
+.nav-tabs-pd ul#pills-tab li.nav-item {width: calc(100%/8 - 0px);width: 180px;padding: 0;}
+
+.nav-tabs-pd ul#pills-tab li.nav-item button {
+    font-size: 16px;
+    line-height: 16px;
+    height: 100%;
+    padding: 15px 20px;
+}
+}
+@media (max-width: 419px){
+    div.login-out-box .login-box {
+        padding: 37px;
+        margin: 0;
+        width: 100%;
+    }
+    .for-mobile .on-mobile {
+        padding: 30px 15px !important; 
+    }
+
+    .menu-logo{
+        left: 0;
+    }
+    .only-mobile-show .menu-logo img {
+        width: 100px;
+        height: auto;
+    }
+    
+    .only-mobile-show .menu-logo p {
+        font-size: 15px;
+    }
+    .container.page {
+        padding: 30px 15px !important;
+        overflow: hidden;
+    }
+    .mobile-btn-qo-1 button {
+        font-size: 11px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .cut-inv-style p.text-center {
+        left: -8px;
+        font-size: 11px !important;
+        text-align: left !important;
+    }
+
+    .third-section.style-25 ul#myTab li.nav-item {
+        margin: 0 0px 0px 0px !important;
+        width: auto !important;
+    }
+    .style-25>.col-md-12 {
+        margin: 0 -1%;
+    }
+    .third-section.style-25  ul#myTab li.nav-item button.nav-link  {
+        padding: 17px 4px !important;
+        font-size: 13px !important;
+         
+    }
+    .input-group #button-addon1, .input-group input.form-control {
+        padding: 10px 15px !important;
+    }
+    .style-25>.col-md-12 ul {
+        margin: 0 0px !important;
+        flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+    .booking-dating button {
+        font-size: 20px !important;  
+    }
+    .booking-text { 
+        font-size: 20px !important;
+    }
+ 
+  
+    .offcanvas-end { 
+        width: 300px;
+    }
+    .button-section-style .form-control{
+background: #fff !important;
+    }
+    ul.radio-btn li {
+        padding-left: 8px !important;
+        
+    }
+    .row.button-section-style .col-7{
+        width: 100% !important;
+    }
+    .radio-btn {
+        display: flex;
+        color: #7c7c7c;
+        font-size: 14px !important;
+        font-weight: 500;
+        list-style-type: none;
+        justify-content: left !important;
+    }
+}
+.mat-toolbar-row .mobile-header{
+    display: none;
+}

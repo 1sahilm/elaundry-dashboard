@@ -1,0 +1,738 @@
+<mat-drawer-container>
+    <div class="container page">
+        <div class="bg-blue">
+            <div class="nav-tabs-pd">
+
+           
+            <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Send to <br> Warehouse</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Ready To Send <br> Warehouse</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Sent To <br> Warehouse</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-recive-tab" data-bs-toggle="pill" data-bs-target="#pills-recive" type="button" role="tab" aria-controls="pills-recive" aria-selected="false">Receive from <br> Warehouse</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-delivery-tab" data-bs-toggle="pill" data-bs-target="#pills-delivery" type="button" role="tab" aria-controls="pills-delivery" aria-selected="false">Ready For <br> Delivery</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-reject-tab" data-bs-toggle="pill" data-bs-target="#pills-reject" type="button" role="tab" aria-controls="pills-reject" aria-selected="false">Reject By <br> Warehouse</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-challan-tab" data-bs-toggle="pill" data-bs-target="#pills-challan" type="button" role="tab" aria-controls="pills-challan" aria-selected="false">Print <br> Challan</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-lst-tab" data-bs-toggle="pill" data-bs-target="#pills-lst" type="button" role="tab" aria-controls="pills-lst" aria-selected="false">---- <br> Home</button>
+                  </li>
+                  
+              </ul>
+            </div>
+              
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                
+                <div class="second-sc-warehouse">
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-md-3 col-tab-5" >
+                          <div class="form-group mb-1-5">
+                            <input type="text" class="form-control" id="strdate" placeholder="Enter QR Code">
+                        </div>
+                        </div>
+                        <div class="col-md-3 col-tab-5" >
+                          <div class="form-group mb-1-5">
+                            <select class="form-control" id="sel1">
+                            <option> ---Record Type---</option>
+                            <option>Action</option>
+                            <option>Another action</option>
+                            <option>Something else here</option> 
+                            </select>
+                            </div>
+ 
+                        </div>
+                        <div class="col-md-3 col-tab-5" >
+                          <div class="form-group mb-1-5">
+                            <input type="text" class="form-control" id="strdate" placeholder="Remark">
+                        </div> 
+                        </div>
+                        <div class="col-md-1 col-tab-15 mb-1-5">
+                            <div class="form-checker">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                </label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-tab-35">
+                            <button class="today-button mb-1-5">Update Status</button>
+            
+                        </div>
+                    </div>
+
+                </div>
+                <div class="warehouse-section" style="margin-top: 20px;">
+                    <div class="paragrapgh-section">
+                        <p>SEND TO WAREHOUSE</p>
+                    </div>
+
+                </div>
+                 <div class="table-responsive-style-2">
+                  <table class="table" style="width:100%;">
+                    <thead class="tabel-heading">
+                      <tr>
+                        <th scope="col">
+                            <div class="row">
+                                <div class="col-6">
+                                    All
+                                </div>
+                                <div class="col-6" style="width: 36% !important; margin-left: -26px;">
+                                    <div class="check-box-tb">
+                                    <div class="form-check">
+                                        <input class="form-check-input first-check" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        </label>
+                                      </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </th>
+                        <th scope="col">S. No.</th>
+                        <th scope="col">QrCode</th>
+                        <th scope="col">Garment Name</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Remark</th>
+                        <th scope="col">History</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="first-tb-row">
+                        <th scope="row" style="text-align: center;"><div class="check-box-tb">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: auto; margin-left: auto;">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                </label>
+                              </div>
+                            </div></th>
+                        <td>01</td>
+                        <td>EI_5_20210925_709OI165213QR001</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td><div class="tabel-btn">
+                            <button>View</button>
+                        </div></td>
+                        
+                      </tr>
+                      <tr class="second-tb-row">
+                        <th scope="row"><div class="check-box-tb">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: auto; margin-left: auto;">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                </label>
+                              </div>
+                            </div></th>
+                        <td>02</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td><div class="tabel-btn">
+                            <button>View</button>
+                        </div></td>
+                        
+                      </tr>
+                      <tr class="third-tb-row">
+                        <th scope="row"><div class="check-box-tb">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: auto; margin-left: auto;">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                </label>
+                              </div>
+                            </div></th>
+                        <td>03</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td><div class="tabel-btn">
+                            <button>View</button>
+                        </div></td>
+                        
+                      </tr>
+                      <tr class="fourth-tb-row">
+                        <th scope="row"><div class="check-box-tb">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: auto; margin-left: auto;">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                </label>
+                              </div>
+                            </div></th>
+                        <td>04</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td><div class="tabel-btn">
+                            <button>View</button>
+                        </div></td>
+                      
+                      </tr>
+                      <tr class="fifth-tb-row">
+                        <th scope="row"><div class="check-box-tb">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: auto; margin-left: auto;">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                </label>
+                              </div>
+                            </div></th>
+                        <td>05</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td><div class="tabel-btn">
+                            <button>View</button>
+                        </div></td>
+                        
+                      </tr>
+                      <tr class="six-tb-row">
+                        <th scope="row"><div class="check-box-tb">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: auto; margin-left: auto;">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                </label>
+                              </div>
+                            </div></th>
+                        <td>06</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td><div class="tabel-btn">
+                            <button>View</button>
+                        </div></td>
+                        
+                      </tr>
+                      <tr class="seven-tb-row">
+                        <th scope="row"><div class="check-box-tb">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: auto; margin-left: auto;">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                </label>
+                              </div>
+                            </div></th>
+                        <td>07</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td><div class="tabel-btn">
+                            <button>View</button>
+                        </div></td>
+                       
+                      </tr>
+                      <tr class="eight-tb-row">
+                        <th scope="row"><div class="check-box-tb">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: auto; margin-left: auto;">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                </label>
+                              </div>
+                            </div></th>
+                        <td>08</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td><div class="tabel-btn">
+                            <button>View</button>
+                        </div></td>
+                        
+                      </tr>
+                      <tr class="nine-tb-row">
+                        <th scope="row"><div class="check-box-tb">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: auto; margin-left: auto;">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                </label>
+                              </div>
+                            </div></th>
+                        <td>09</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td><div class="tabel-btn">
+                            <button>View</button>
+                        </div></td>
+                        
+                      </tr>
+                      <tr class="six-tb-row">
+                        <th scope="row"><div class="check-box-tb">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: auto; margin-left: auto;">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                </label>
+                              </div>
+                            </div></th>
+                        <td>10</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td><div class="tabel-btn">
+                            <button>View</button>
+                        </div></td>
+                        
+                      </tr>
+                      <tr class="seven-tb-row">
+                        <th scope="row"><div class="check-box-tb">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: auto; margin-left: auto;">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                </label>
+                              </div>
+                            </div></th>
+                        <td>12</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td><div class="tabel-btn">
+                            <button>View</button>
+                        </div></td>
+                        
+                      </tr>
+                      <tr class="eight-tb-row">
+                        <th scope="row"><div class="check-box-tb">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: auto; margin-left: auto;">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                </label>
+                              </div>
+                            </div></th>
+                        <td>13</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td><div class="tabel-btn">
+                            <button>View</button>
+                        </div></td>
+                        
+                      </tr>
+                      <tr class="nine-tb-row">
+                        <th scope="row"><div class="check-box-tb">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: auto; margin-left: auto;">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                </label>
+                              </div>
+                            </div></th>
+                        <td>14</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td><div class="tabel-btn">
+                            <button>View</button>
+                        </div>
+                    </td>
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                  <!-- <footer>
+                    <p>E-LAUNDRY SOLUTIONS, A-105, Sector 65, Noida, Uttar Pradesh-301302</p>
+                    <div class="last-footer">
+                        <p>"A perfect Solution for your Laundry and Drycleaning Business"</p>
+                    </div>
+                    
+                </footer> -->
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="second-sc-warehouse">
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-md-3 col-tab-5" >
+
+                          <div class="form-group mb-1-5">
+                            <input type="text" class="form-control" id="strdate" placeholder="Enter QR Code">
+                        </div> 
+    
+                        </div>
+                        <div class="col-md-3 col-tab-5" >
+                          <div class="form-group mb-1-5">
+                            <select class="form-control" id="sel1">
+                            <option> ---Record Type---</option>
+                            <option>Action</option>
+                            <option>Another action</option>
+                            <option>Something else here</option> 
+                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-tab-5" >
+                          <div class="form-group mb-1-5">
+                            <input type="text" class="form-control" id="strdate" placeholder="Remark">
+                        </div>  
+                        </div>
+                        <div class="col-md-1  col-tab-15 mb-1-5">
+                            <div class="form-checker ">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                </label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-tab-35">
+                            <button class="today-button mb-1-5">Update Status</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="warehouse-section" style="margin-top: 20px;">
+                    <div class="paragrapgh-section">
+                        <p>SEND TO WAREHOUSE</p>
+                    </div>
+
+                </div>
+              <div class="table-responsive-style-2">
+              <table class="table" style="width:100%;">
+                <thead class="tabel-heading">
+                  <tr>
+                    <th scope="col">S. No.</th>
+                    <th scope="col">QrCode</th>
+                    <th scope="col">Garment Name</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Remark</th>
+                    <th scope="col">History</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="first-tb-row">
+                    <th scope="row" style="text-align: center;">01</th>
+                    <td>xyd</td>
+                    <td>EI_5_20210925_709OI165213QR001</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    
+                    
+                  </tr>
+                </tbody>
+              </table>
+             </div>
+                 
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="second-sc-warehouse">
+                    
+
+                </div>
+                <div class="warehouse-section" style="margin-top: 20px;">
+                    <div class="paragrapgh-section">
+                        <p>SEND TO WAREHOUSE</p>
+                    </div>
+
+                </div>
+               <div class="table-responsive-style-2">
+                <table class="table" style="width:100%;">
+                  <thead class="tabel-heading">
+                    <tr>
+                      <th scope="col">S. No.</th>
+                      <th scope="col">QrCode</th>
+                      <th scope="col">Garment Name</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Remark</th>
+                      <th scope="col">History</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="first-tb-row">
+                      <th scope="row" style="text-align: center;">01</th>
+                      <td>xyz</td>
+                      <td>EI_5_20210925_709OI165213QR001</td>
+                      <td>@mdo</td>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-recive" role="tabpanel" aria-labelledby="pills-recive-tab">
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-md-3 col-tab-5" >
+                      <div class="form-group mb-1-5">
+                        <input type="text" class="form-control" id="strdate" placeholder="Enter QR Code">
+                    </div>  
+                    </div>
+                    <div class="col-md-3 col-tab-5" >
+                      <div class="form-group mb-1-5">
+                        <select class="form-control" id="sel1">
+                        <option> ---Record Type---</option>
+                        <option>Action</option>
+                        <option>Another action</option>
+                        <option>Something else here</option> 
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-tab-5" >
+                        <div class="form-group mb-1-5">
+                          <input type="text" class="form-control" id="strdate" placeholder="Remark">
+                      </div> 
+                    </div>
+                    <div class="col-md-1 col-tab-15 mb-1-5">
+                        <div class="form-checker ">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            </label>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-tab-35">
+                        <button class="today-button mb-1-5">Update Status</button>
+        
+                    </div>
+                </div>
+                
+                <div class="warehouse-section" style="margin-top: 20px;">
+                    <div class="paragrapgh-section">
+                        <p>SEND TO WAREHOUSE</p>
+                    </div>
+
+                </div>
+                <div class="table-responsive-style-2">
+                <table class="table" style="width:100%;">
+                  <thead class="tabel-heading">
+                    <tr>
+                      <th scope="col">S. No.</th>
+                      <th scope="col">QrCode</th>
+                      <th scope="col">Garment Name</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Remark</th>
+                      <th scope="col">History</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="first-tb-row">
+                      <th scope="row" style="text-align: center;">01</th>
+                      <td>xyz</td>
+                      <td>EI_5_20210925_709OI165213QR001</td>
+                      <td>@mdo</td>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      
+                    </tr>
+                  </tbody>
+                </table>
+               </div>
+            </div>
+            <div class="tab-pane fade" id="pills-delivery" role="tabpanel" aria-labelledby="pills-delivery-tab">
+                
+                
+                <div class="warehouse-section" style="margin-top: 20px;">
+                    <div class="paragrapgh-section">
+                        <p>SEND TO WAREHOUSE</p>
+                    </div>
+
+                </div>
+              <div class="table-responsive-style-2">
+              <table class="table" style="width:100%;">
+                <thead class="tabel-heading">
+                  <tr>
+                    <th scope="col">S. No.</th>
+                    <th scope="col">QrCode</th>
+                    <th scope="col">Garment Name</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Remark</th>
+                    <th scope="col">History</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="first-tb-row">
+                    <th scope="row" style="text-align: center;">01</th>
+                    <td>xyz</td>
+                    <td>EI_5_20210925_709OI165213QR001</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    
+                  </tr>
+                </tbody>
+              </table>
+             </div>
+            </div>
+            <div class="tab-pane fade" id="pills-reject" role="tabpanel" aria-labelledby="pills-reject-tab">
+                
+                <div class="warehouse-section" style="margin-top: 20px;">
+                    <div class="paragrapgh-section">
+                        <p>SEND TO WAREHOUSE</p>
+                    </div>
+
+                </div>
+                <div class="table-responsive-style-2">
+                <table class="table" style="width:100%;">
+                  <thead class="tabel-heading">
+                    <tr>
+                      <th scope="col">S. No.</th>
+                      <th scope="col">QrCode</th>
+                      <th scope="col">Garment Name</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Remark</th>
+                      <th scope="col">History</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="first-tb-row">
+                      <th scope="row" style="text-align: center;">01</th>
+                      <td>xyz</td>
+                      <td>EI_5_20210925_709OI165213QR001</td>
+                      <td>@mdo</td>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      
+                    </tr>
+                  </tbody>
+                </table>
+               </div>
+            </div>
+            <div class="tab-pane fade" id="pills-challan" role="tabpanel" aria-labelledby="pills-challan-tab">
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-md-3 col-tab-5" >
+                      
+                        <div class="form-group mb-1-5">
+                          <input type="text" class="form-control" id="strdate" placeholder="Enter QR Code">
+                      </div> 
+                    </div>
+                    <div class="col-md-3 col-tab-5" >
+                      <div class="form-group mb-1-5">
+                        <select class="form-control" id="sel1">
+                        <option> ---Record Type---</option>
+                        <option>Action</option>
+                        <option>Another action</option>
+                        <option>Something else here</option> 
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-tab-5" >
+                   
+                        <div class="form-group mb-1-5">
+                          <input type="text" class="form-control" id="strdate" placeholder="Remark">
+                      </div> 
+                        
+                   
+                    </div>
+                    <div class="col-md-1 col-tab-15 mb-1-5">
+                        <div class="form-checker">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            </label>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-tab-35">
+                        <button class="today-button">Update Status</button>
+        
+                    </div>
+                </div>
+                
+                <div class="warehouse-section" style="margin-top: 20px;">
+                    <div class="paragrapgh-section">
+                        <p>SEND TO WAREHOUSE</p>
+                    </div>
+
+                </div>
+               <div class="table-responsive-style-2">
+                <table class="table" style="width:100%;">
+                  <thead class="tabel-heading">
+                    <tr>
+                      <th scope="col">S. No.</th>
+                      <th scope="col">Challan Id</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Store</th>
+                      <th scope="col">WareHouse</th>
+                      <th scope="col">Garments</th>
+                      <th scope="col">History</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="first-tb-row-print-chlln">
+                      <th scope="row" style="text-align: center;">01</th>
+                      <td>01</td>
+                      <td>Ch_1280</td>
+                      <td>@mdo</td>
+                      <td>Mark</td>
+                      <td>
+                            <!-- another tabel start -->
+                          <table class="table" style="width:100%;">
+                          <thead class="tabel-heading-another">
+                            <tr>
+                              <th scope="col">S. No.</th>
+                              <th scope="col">Challan Id</th>
+                              <th scope="col">Date</th>
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="first-tb-row-next-table">
+                              <th scope="row" style="text-align: center;">1</th>
+                              <td>01</td>
+                              <td>Ch_1280</td>
+                              
+                              
+                              
+                            </tr>
+                            <tr class="first-tb-row-next-table-s">
+                              <th scope="row" style="text-align: center;">2</th>
+                              <td>01</td>
+                              <td>Ch_1280</td>
+                              
+                              
+                              
+                            </tr>
+                          
+                          </tbody>
+                        </table>
+                        <!-- another tabel end -->
+                      </td>
+                      <td><div class="tabel-btn">
+                          <button>Print Challan</button>
+                      </div></td>
+                      
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-lst" role="tabpanel" aria-labelledby="pills-lst-tab">lst</div>
+          </div>
+
+    </div>
+ 
+</mat-drawer-container>
+<footer style="vertical-align: bottom;">
+    <p>E-LAUNDRY SOLUTIONS, A-105, Sector 65, Noida, Uttar Pradesh-301302</p>
+    <div class="last-footer">
+        <p>"A perfect Solution for your Laundry and Drycleaning Business"</p>
+    </div>
+    
+</footer>

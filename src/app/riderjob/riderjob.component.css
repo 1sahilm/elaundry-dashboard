@@ -1,0 +1,134 @@
+.page{
+    padding: 30px;
+}
+.page h4{
+    font-size: 20px;
+    color: #002B6B;
+    font-weight: 500;
+}
+#dropdownMenuButton1{
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    color: #002B6B;
+    background: #fff;
+    border: 1px solid #bbb7b7;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    padding: 11px;
+    border-radius: 8px;
+}
+.dropdown-toggle::after{
+    margin-left: 20.255em;
+}
+.second-dropdown::after{
+    margin-left: 25rem !important;
+}
+.glyphicon-calendar
+{
+    font-size: 15pt;
+}
+.input-group
+{
+    width: 180px;
+    margin-top:30px;
+}
+.form-control{
+    padding: 11px;
+    border-radius: 8px;
+}
+.third-dropdown::after{
+    margin-left: 19rem;
+}
+.today-button{
+    padding: 12px 41px 12px 41px;
+    border: none;
+    border-bottom: none;
+    border-radius: 5px;
+    background: transparent;
+    font-weight: 600;
+    font-size: 21px;
+    color: #002B6B;
+    box-shadow: 0 0 10px #00000040;
+}
+footer{
+    background: #343A40;
+}
+footer p{
+    text-align: center;
+    text-align: center;
+    padding: 5px;
+    letter-spacing: 0.6px;
+    color: #fff;
+}
+.last-footer{
+    background: #fff;
+}
+.last-footer p{
+    text-align: center;
+    color: #0069D9;
+    font-size: 17px;
+    letter-spacing: 0.6px;
+    font-weight: 500;
+}
+table, th, td {
+    border: 1px solid #A5A5A559 !important;
+    border-collapse: collapse;
+    letter-spacing: 0.8px;
+  }
+.tabel-heading{
+    color: #002B6B;
+    background: #fff;
+}
+.tabel-heading tr th{
+    padding: 14px 9px 14px;
+}
+.first-tb-row{
+    background: #C2DEFE;
+}
+.second-tb-row{
+    background: #FFEEB8;
+}
+.third-tb-row{
+    background: #FFCBCB;
+}
+.fourth-tb-row{
+    background: #D0EBD0;
+}
+.fifth-tb-row{
+    background: #CDCCE8;
+}
+.six-tb-row{
+    background: #C2DEFE;
+}
+.seven-tb-row{
+    background: #FFEEB8;
+}
+.eight-tb-row{
+    background: #FFCBCB;
+}
+.nine-tb-row{
+    background: #D0EBD0;
+}
+.warehouse-section{
+    background-color: #707070;
+}
+.paragrapgh-section{
+    padding: 11px 10px 1px 10px;
+
+}
+.paragrapgh-section p{
+    text-align: center;
+    text-align: center;
+    letter-spacing: 0.9px;
+}
+.first-tb-row-print-chlln{
+    background: #E8F8F8;
+}
+.tabel-btn button{
+    background: #006B20;
+    color: #fff;
+    padding: 4px 14px 4px 14px;
+    border-color: #006B20;
+
+}
