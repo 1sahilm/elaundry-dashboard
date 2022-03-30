@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule, VERSION,HostListener } from '@angular/core';
+import * as jQuery from 'jquery';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+
+   
+    
+    
+      
+      // jQuery("#third-section").prependTo("#third-sectionnnnn");
+
+     
+   
+
+ 
+ 
   }
+ 
 
 }
+ 

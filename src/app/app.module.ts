@@ -23,6 +23,8 @@ import { ReportsComponent } from './reports/reports.component';
 import { LoginComponent } from './login/login.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SettingComponent } from './setting/setting.component';
+import { MatFormFieldModule } from '@angular/material/form-field'; 
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 
 @NgModule({
@@ -52,6 +54,8 @@ import { SettingComponent } from './setting/setting.component';
     MatIconModule,
     MatDividerModule,
     MatListModule,
+    MatFormFieldModule,
+    InfiniteScrollModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

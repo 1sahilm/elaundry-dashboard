@@ -5,27 +5,45 @@
       <div class="col-12">
       <div class="form-box-style pr-2 pl-2">
         <div class="row">
+
+          
+
+
           <div class="col-md-5 col-tab-2">
           <div class="form-group mb-1-5">
-          <label for="sel1">Record :</label>
-          <select class="form-control" id="sel1">
-          <option> ---Record Type---</option>
-          <option>Action</option>
-          <option>Another action</option>
-          <option>Something else here</option> 
-          </select>
+
+
+            <div class="floating-label">  
+              <select class="floating-select form-control" onclick="this.setAttribute('value', this.value);" value="">
+                <option value=""></option>
+                <option> ---Record Type---</option>
+                <option>Action</option>
+                <option>Another action</option>
+                <option>Something else here</option> 
+              </select>
+              <span class="highlight"></span>
+              <label>Record</label>
+            </div>
+
+
+          
           </div>
           </div>
           
           <div class="col-md-7 col-tab-2">
           <div class="form-group mb-1-5">
-          <label for="sel1">Status :</label>
-          <select class="form-control" id="sel1">
-          <option> ---Record Type---</option>
-          <option>Action</option>
-          <option>Another action</option>
-          <option>Something else here</option> 
-          </select>
+            <div class="floating-label">  
+              <select class="floating-select form-control" onclick="this.setAttribute('value', this.value);" value="">
+                <option value=""></option>
+                <option> ---Record Type---</option>
+                <option>Action</option>
+                <option>Another action</option>
+                <option>Something else here</option> 
+              </select>
+              <span class="highlight"></span>
+              <label>Record</label>
+            </div>
+          
           </div>
           </div>
           </div>
@@ -34,15 +52,21 @@
           <div class="col-md-5 col-tab-1">
           <div class="row">
           <div class="col-md-6 col-tab-2">
-          <div class="form-group mb-1-5">
-          <label for="strdate">Start From :</label>
-          <input type="date" class="form-control" id="strdate" placeholder="22-09-2021">
-          </div>
+           
+            <div class="floating-label form-group mb-1-5">      
+              <input class="floating-input form-control" type="text" onclick="(this.type='date')" placeholder=" ">
+              <span class="highlight"></span>
+              <label>Date</label>
+            </div>
+           
           </div>
           <div class="col-md-6 col-tab-2">
           <div class="form-group mb-1-5">
-          <label for="enddate">Start From :</label>
-          <input type="date" class="form-control" id="enddate"  placeholder="22-09-2021">
+            <div class="floating-label form-group mb-1-5">      
+              <input class="floating-input form-control" type="text" onclick="(this.type='date')" placeholder=" ">
+              <span class="highlight"></span>
+              <label>Date</label>
+            </div>
           </div>
           </div>
           </div>
@@ -52,17 +76,21 @@
           <div class="row">
           <div class="col-md-8 col-tab-2">
           <div class="form-group mb-1-5">
-          <label for="sel1">Report By :</label>
-          <select class="form-control" id="sel1">
-          <option> ---Record Type---</option>
-          <option>Action</option>
-          <option>Another action</option>
-          <option>Something else here</option> 
-          </select>
+            <div class="floating-label">
+              <select class="floating-select form-control" onclick="this.setAttribute('value', this.value);" value="">
+                <option value=""></option>
+                <option> ---Record Type---</option>
+                <option>Action</option>
+                <option>Another action</option>
+                <option>Something else here</option> 
+              </select>
+              <span class="highlight"></span>
+              <label>Record</label>
+            </div>
           </div>
           </div>
-          <div class="col-md-4 col-tab-2"><br/>  
-          <button class="today-button mb-1-5">Search</button>
+          <div class="col-md-4 col-tab-2"> 
+          <button class="today-button wful d-block mb-1-4">Search</button>
           </div>
           </div>
           </div>
@@ -72,7 +100,12 @@
           <div class="col-md-5">
           <div class="row">
           <div class="col-md-12">
-          <input type="text" class="form-control mb-1-5" placeholder="Mobile Number" />
+            <div class="floating-label">      
+              <input class="floating-input form-control mb-1-4" type="text" placeholder=" ">
+              <span class="highlight"></span>
+              <label>Mobile Number</label>
+            </div>
+           
           </div>
           
           </div>
@@ -81,10 +114,20 @@
           <div class="col-md-7">
           <div class="row">
           <div class="col-md-8">
-          <input type="text" class="form-control mb-1-5" placeholder="Order Number" />
+            <div class="floating-label">      
+              <input class="floating-input form-control mb-1-5" type="text" placeholder=" ">
+              <span class="highlight"></span>
+              <label>Order Number</label>
+            </div>
+          
           </div>
           <div class="col-md-4">
-          <input type="text" class="form-control mb-1-5" placeholder="Customer Name" />
+            <div class="floating-label">      
+              <input class="floating-input form-control mb-1-5" type="text" placeholder=" ">
+              <span class="highlight"></span>
+              <label>Customer Name</label>
+            </div>
+           
           </div>
           </div>
           </div>
@@ -275,6 +318,7 @@
        
           
     </div>
+    
     <footer>
         <p>E-LAUNDRY SOLUTIONS, A-105, Sector 65, Noida, Uttar Pradesh-301302</p>
         <div class="last-footer">
@@ -285,6 +329,7 @@
 
     
 </mat-drawer-container>
+
 <script>
   jQuery(document).ready(function () {
     jQuery('#dtHorizontalVerticalExample').DataTable({

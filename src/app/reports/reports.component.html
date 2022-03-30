@@ -9,19 +9,27 @@
                 <div class="row">
                 <div class="col-md-8">
                     <div class="form-group mb-1-5">
-                        <label for="sel1">Report :</label>
-                        <select class="form-control" id="sel1">
-                        <option> ---Record Type---</option>
-                        <option>Action</option>
-                        <option>Another action</option>
-                        <option>Something else here</option> 
-                        </select>
+                        
+              <div class="floating-label">
+                <select class="floating-select form-control" onclick="this.setAttribute('value', this.value);" value="">
+                  <option value=""></option>
+                  <option> ---Record Type---</option>
+                  <option>Action</option>
+                  <option>Another action</option>
+                  <option>Something else here</option> 
+                </select>
+                <span class="highlight"></span>
+                <label>Report</label>
+              </div>
                         </div>
                 </div>
                 <div class="col-md-4">
                 <div class="form-group mb-1-5">
-                <label for="enddate">Start To :</label>
-                <input type="date" class="form-control" id="enddate"  placeholder="22-09-2021">
+                    <div class="floating-label form-group mb-1-5">      
+                        <input class="floating-input form-control" type="text" onclick="(this.type='date')" placeholder=" ">
+                        <span class="highlight"></span>
+                        <label>Start From :</label>
+                      </div>
                 </div>
                 </div>
                 </div>
@@ -31,20 +39,27 @@
                <div class="row">
                 <div class="col-md-4">
                     <div class="form-group mb-1-5">
-                    <label for="enddate">End To :</label>
-                    <input type="date" class="form-control" id="enddate"  placeholder="22-09-2021">
+                        <div class="floating-label form-group mb-1-5">      
+                            <input class="floating-input form-control" type="text" onclick="(this.type='date')" placeholder=" ">
+                            <span class="highlight"></span>
+                            <label>End From :</label>
+                          </div>
                     </div>
                     </div>
                 
                 <div class="col-md-8">
                     <div class="form-group mb-1-5">
-                        <label for="sel1">Report By :</label>
-                        <select class="form-control" id="sel1">
-                        <option> ---Record Type---</option>
-                        <option>Action</option>
-                        <option>Another action</option>
-                        <option>Something else here</option> 
-                        </select>
+                        <div class="floating-label">
+                            <select class="floating-select form-control" onclick="this.setAttribute('value', this.value);" value="">
+                              <option value=""></option>
+                              <option> ---Record Type---</option>
+                              <option>Action</option>
+                              <option>Another action</option>
+                              <option>Something else here</option> 
+                            </select>
+                            <span class="highlight"></span>
+                            <label>Report</label>
+                          </div>
                         </div>
                 </div>
                </div>
@@ -61,10 +76,8 @@
 
 
      
-        <div class="warehouse-section" style="margin-top: 30px;">
-            <div class="paragrapgh-section">
-                <p>REPORT</p>
-            </div>
+        <div class="warehouse-section">
+            
 
         </div>
         <div class="table-responsive-style-2">

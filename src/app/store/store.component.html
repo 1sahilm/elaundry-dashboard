@@ -38,29 +38,44 @@
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                 
                 <div class="second-sc-warehouse">
-                    <div class="row" style="margin-top: 20px;">
-                        <div class="col-md-3 col-tab-5" >
+                    <div class="row">
+                        <div class="col-md-3 col-xs-12" >
                           <div class="form-group mb-1-5">
-                            <input type="text" class="form-control" id="strdate" placeholder="Enter QR Code">
+                            <div class="floating-label">      
+                              <input class="floating-input form-control mb-1-5" type="text" placeholder=" ">
+                              <span class="highlight"></span>
+                              <label>Enter QR Code</label>
+                            </div>
+                             
                         </div>
                         </div>
-                        <div class="col-md-3 col-tab-5" >
+                        <div class="col-md-3 col-xs-12" >
                           <div class="form-group mb-1-5">
-                            <select class="form-control" id="sel1">
-                            <option> ---Record Type---</option>
-                            <option>Action</option>
-                            <option>Another action</option>
-                            <option>Something else here</option> 
-                            </select>
+                            <div class="floating-label">
+                              <select class="floating-select form-control" onclick="this.setAttribute('value', this.value);" value="">
+                                <option value=""></option>
+                                <option> ---Record Type---</option>
+                                <option>Action</option>
+                                <option>Another action</option>
+                                <option>Something else here</option> 
+                              </select>
+                              <span class="highlight"></span>
+                              <label>Record</label>
+                            </div>
                             </div>
  
                         </div>
-                        <div class="col-md-3 col-tab-5" >
+                        <div class="col-md-3 col-xs-12" >
                           <div class="form-group mb-1-5">
-                            <input type="text" class="form-control" id="strdate" placeholder="Remark">
+                            <div class="floating-label">      
+                              <input class="floating-input form-control mb-1-5" type="text" placeholder=" ">
+                              <span class="highlight"></span>
+                              <label>Remark</label>
+                            </div>
+                            
                         </div> 
                         </div>
-                        <div class="col-md-1 col-tab-15 mb-1-5">
+                        <div class="col-md-1 col-xs-3 check-box-tab mb-1-5">
                             <div class="form-checker">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -69,17 +84,14 @@
                               </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-tab-35">
-                            <button class="today-button mb-1-5">Update Status</button>
-            
+                        <div class="col-md-2 col-xs-9 btn-cm">
+                            <button class="today-button wful d-block mb-1-5">Update Status</button>
                         </div>
                     </div>
 
                 </div>
-                <div class="warehouse-section" style="margin-top: 20px;">
-                    <div class="paragrapgh-section">
-                        <p>SEND TO WAREHOUSE</p>
-                    </div>
+                <div class="warehouse-section">
+                    
 
                 </div>
                  <div class="table-responsive-style-2">
@@ -360,49 +372,61 @@
                 </footer> -->
             </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="second-sc-warehouse">
-                    <div class="row" style="margin-top: 20px;">
-                        <div class="col-md-3 col-tab-5" >
-
-                          <div class="form-group mb-1-5">
-                            <input type="text" class="form-control" id="strdate" placeholder="Enter QR Code">
-                        </div> 
-    
+              <div class="second-sc-warehouse">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12" >
+                      <div class="form-group mb-1-5">
+                        <div class="floating-label">      
+                          <input class="floating-input form-control mb-1-5" type="text" placeholder=" ">
+                          <span class="highlight"></span>
+                          <label>Enter QR Code</label>
                         </div>
-                        <div class="col-md-3 col-tab-5" >
-                          <div class="form-group mb-1-5">
-                            <select class="form-control" id="sel1">
+                         
+                    </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12" >
+                      <div class="form-group mb-1-5">
+                        <div class="floating-label">
+                          <select class="floating-select form-control" onclick="this.setAttribute('value', this.value);" value="">
+                            <option value=""></option>
                             <option> ---Record Type---</option>
                             <option>Action</option>
                             <option>Another action</option>
                             <option>Something else here</option> 
-                            </select>
-                            </div>
+                          </select>
+                          <span class="highlight"></span>
+                          <label>Record</label>
                         </div>
-                        <div class="col-md-3 col-tab-5" >
-                          <div class="form-group mb-1-5">
-                            <input type="text" class="form-control" id="strdate" placeholder="Remark">
-                        </div>  
                         </div>
-                        <div class="col-md-1  col-tab-15 mb-1-5">
-                            <div class="form-checker ">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                </label>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-tab-35">
-                            <button class="today-button mb-1-5">Update Status</button>
-                        </div>
-                    </div>
 
-                </div>
-                <div class="warehouse-section" style="margin-top: 20px;">
-                    <div class="paragrapgh-section">
-                        <p>SEND TO WAREHOUSE</p>
                     </div>
+                    <div class="col-md-3 col-xs-12" >
+                      <div class="form-group mb-1-5">
+                        <div class="floating-label">      
+                          <input class="floating-input form-control mb-1-5" type="text" placeholder=" ">
+                          <span class="highlight"></span>
+                          <label>Remark</label>
+                        </div>
+                        
+                    </div> 
+                    </div>
+                    <div class="col-md-1 col-xs-3 check-box-tab mb-1-5">
+                        <div class="form-checker">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            </label>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-9 btn-cm">
+                      <button class="today-button wful d-block mb-1-5">Update Status</button>
+                  </div>
+                </div>
+
+            </div>
+                <div class="warehouse-section">
+                    
 
                 </div>
               <div class="table-responsive-style-2">
@@ -439,10 +463,8 @@
                     
 
                 </div>
-                <div class="warehouse-section" style="margin-top: 20px;">
-                    <div class="paragrapgh-section">
-                        <p>SEND TO WAREHOUSE</p>
-                    </div>
+                <div class="warehouse-section">
+                    
 
                 </div>
                <div class="table-responsive-style-2">
@@ -473,29 +495,46 @@
               </div>
             </div>
             <div class="tab-pane fade" id="pills-recive" role="tabpanel" aria-labelledby="pills-recive-tab">
-                <div class="row" style="margin-top: 20px;">
-                    <div class="col-md-3 col-tab-5" >
+              <div class="second-sc-warehouse">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12" >
                       <div class="form-group mb-1-5">
-                        <input type="text" class="form-control" id="strdate" placeholder="Enter QR Code">
-                    </div>  
-                    </div>
-                    <div class="col-md-3 col-tab-5" >
-                      <div class="form-group mb-1-5">
-                        <select class="form-control" id="sel1">
-                        <option> ---Record Type---</option>
-                        <option>Action</option>
-                        <option>Another action</option>
-                        <option>Something else here</option> 
-                        </select>
+                        <div class="floating-label">      
+                          <input class="floating-input form-control mb-1-5" type="text" placeholder=" ">
+                          <span class="highlight"></span>
+                          <label>Enter QR Code</label>
                         </div>
+                         
                     </div>
-                    <div class="col-md-3 col-tab-5" >
-                        <div class="form-group mb-1-5">
-                          <input type="text" class="form-control" id="strdate" placeholder="Remark">
-                      </div> 
                     </div>
-                    <div class="col-md-1 col-tab-15 mb-1-5">
-                        <div class="form-checker ">
+                    <div class="col-md-3 col-xs-12" >
+                      <div class="form-group mb-1-5">
+                        <div class="floating-label">
+                          <select class="floating-select form-control" onclick="this.setAttribute('value', this.value);" value="">
+                            <option value=""></option>
+                            <option> ---Record Type---</option>
+                            <option>Action</option>
+                            <option>Another action</option>
+                            <option>Something else here</option> 
+                          </select>
+                          <span class="highlight"></span>
+                          <label>Record</label>
+                        </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-xs-12" >
+                      <div class="form-group mb-1-5">
+                        <div class="floating-label">      
+                          <input class="floating-input form-control mb-1-5" type="text" placeholder=" ">
+                          <span class="highlight"></span>
+                          <label>Remark</label>
+                        </div>
+                        
+                    </div> 
+                    </div>
+                    <div class="col-md-1 col-xs-3 check-box-tab mb-1-5">
+                        <div class="form-checker">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
@@ -503,16 +542,15 @@
                           </div>
                         </div>
                     </div>
-                    <div class="col-md-2 col-tab-35">
-                        <button class="today-button mb-1-5">Update Status</button>
-        
-                    </div>
+                    <div class="col-md-2 col-xs-9 btn-cm">
+                      <button class="today-button wful d-block mb-1-5">Update Status</button>
+                  </div>
                 </div>
+
+            </div>
                 
-                <div class="warehouse-section" style="margin-top: 20px;">
-                    <div class="paragrapgh-section">
-                        <p>SEND TO WAREHOUSE</p>
-                    </div>
+                <div class="warehouse-section">
+                    
 
                 </div>
                 <div class="table-responsive-style-2">
@@ -544,11 +582,9 @@
             </div>
             <div class="tab-pane fade" id="pills-delivery" role="tabpanel" aria-labelledby="pills-delivery-tab">
                 
-                
-                <div class="warehouse-section" style="margin-top: 20px;">
-                    <div class="paragrapgh-section">
-                        <p>SEND TO WAREHOUSE</p>
-                    </div>
+              <div class="second-sc-warehouse"></div>
+                <div class="warehouse-section">
+                    
 
                 </div>
               <div class="table-responsive-style-2">
@@ -579,11 +615,9 @@
              </div>
             </div>
             <div class="tab-pane fade" id="pills-reject" role="tabpanel" aria-labelledby="pills-reject-tab">
-                
-                <div class="warehouse-section" style="margin-top: 20px;">
-                    <div class="paragrapgh-section">
-                        <p>SEND TO WAREHOUSE</p>
-                    </div>
+              <div class="second-sc-warehouse"></div>
+                <div class="warehouse-section">
+                    
 
                 </div>
                 <div class="table-responsive-style-2">
@@ -614,32 +648,45 @@
                </div>
             </div>
             <div class="tab-pane fade" id="pills-challan" role="tabpanel" aria-labelledby="pills-challan-tab">
-                <div class="row" style="margin-top: 20px;">
-                    <div class="col-md-3 col-tab-5" >
-                      
-                        <div class="form-group mb-1-5">
-                          <input type="text" class="form-control" id="strdate" placeholder="Enter QR Code">
-                      </div> 
-                    </div>
-                    <div class="col-md-3 col-tab-5" >
+              <div class="second-sc-warehouse">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12" >
                       <div class="form-group mb-1-5">
-                        <select class="form-control" id="sel1">
-                        <option> ---Record Type---</option>
-                        <option>Action</option>
-                        <option>Another action</option>
-                        <option>Something else here</option> 
-                        </select>
+                        <div class="floating-label">      
+                          <input class="floating-input form-control mb-1-5" type="text" placeholder=" ">
+                          <span class="highlight"></span>
+                          <label>Enter QR Code</label>
                         </div>
+                         
                     </div>
-                    <div class="col-md-3 col-tab-5" >
-                   
-                        <div class="form-group mb-1-5">
-                          <input type="text" class="form-control" id="strdate" placeholder="Remark">
-                      </div> 
+                    </div>
+                    <div class="col-md-3 col-xs-12" >
+                      <div class="form-group mb-1-5">
+                        <div class="floating-label">
+                          <select class="floating-select form-control" onclick="this.setAttribute('value', this.value);" value="">
+                            <option value=""></option>
+                            <option> ---Record Type---</option>
+                            <option>Action</option>
+                            <option>Another action</option>
+                            <option>Something else here</option> 
+                          </select>
+                          <span class="highlight"></span>
+                          <label>Record</label>
+                        </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-xs-12" >
+                      <div class="form-group mb-1-5">
+                        <div class="floating-label">      
+                          <input class="floating-input form-control mb-1-5" type="text" placeholder=" ">
+                          <span class="highlight"></span>
+                          <label>Remark</label>
+                        </div>
                         
-                   
+                    </div> 
                     </div>
-                    <div class="col-md-1 col-tab-15 mb-1-5">
+                    <div class="col-md-1 col-xs-3 check-box-tab mb-1-5">
                         <div class="form-checker">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -648,16 +695,15 @@
                           </div>
                         </div>
                     </div>
-                    <div class="col-md-2 col-tab-35">
-                        <button class="today-button">Update Status</button>
-        
-                    </div>
+                    <div class="col-md-2 col-xs-9 btn-cm">
+                      <button class="today-button wful d-block mb-1-5">Update Status</button>
+                  </div>
                 </div>
+
+            </div>
                 
-                <div class="warehouse-section" style="margin-top: 20px;">
-                    <div class="paragrapgh-section">
-                        <p>SEND TO WAREHOUSE</p>
-                    </div>
+                <div class="warehouse-section">
+                    
 
                 </div>
                <div class="table-responsive-style-2">
